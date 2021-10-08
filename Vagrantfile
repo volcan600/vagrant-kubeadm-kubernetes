@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
       master.vm.provision "shell", path: "scripts/master.sh"
     end
 
-    (1..2).each do |i|
+    (1..3).each do |i|
   
     config.vm.define "node0#{i}" do |node|
       node.vm.box = "bento/ubuntu-18.04"
